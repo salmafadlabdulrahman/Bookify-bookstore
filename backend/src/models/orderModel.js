@@ -34,29 +34,3 @@ const orderSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model("Order", orderSchema);
-
-// const mongoose = require("mongoose");
-
-// const orderSchema = new mongoose.Schema(
-//   {
-//     user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
-//     items: [
-//       {
-//         book: {
-//           type: mongoose.Schema.Types.ObjectId,
-//           ref: "Book",
-//           required: true,
-//         },
-//         quantity: { type: Number, required: true, default: 1 },
-//       },
-//     ],
-//     totalPrice: { type: Number, required: true },
-
-//     isPaid: { type: Boolean, default: false },
-
-//     isDelivered: { type: Boolean, default: false },
-//   },
-//   { timestamps: true }
-// );
-
-// module.exports = mongoose.model("Order", orderSchema);
